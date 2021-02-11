@@ -77,11 +77,19 @@
     opacity: 1;
 }
 .navigation .navArea ul li a{
-    font-size: 2em;
+    font-size: 3em;
     font-weight: 600;
     text-decoration: none;
     color: rgb(255, 255, 255, 0.5);
 }
+@media (max-width: 600px) {
+    .navigation .navArea ul li a{
+        font-size: 30px;
+        font-weight: 600;
+        text-decoration: none;
+        color: rgb(255, 255, 255, 0.5);
+    }
+  }
 .navigation .navArea ul li:hover a{
     color: rgb(255, 255, 255, 1);
 }
