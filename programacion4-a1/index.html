@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="public/css/estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>APP ACADEMICA</title>
+</head>
+<body class="bg-secondary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">::.. APP ..::</a>
+       
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">INICIO <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mostrar-alumnos" data-modulo="alumnos" data-form="alumnos" href="#">Alumnos</a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link mostrar-buscar-alumnos" data-modulo="alumnos" data-form="buscar-alumnos" href="#">Buscar Alumnos</a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link mostrar-docentes" data-modulo="docentes" href="#">Docentes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mostrar-materias" data-modulo="materias" href="#">Materias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mostrar-matricula" data-modulo="matricula" href="#">Matricula</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mostrar-inscripcion" data-modulo="inscripcion" href="#">Inscripcion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mostrar-notas" data-modulo="notas" href="#">Notas</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="modulos" id="vista-alumnos"></div>
+        <div class="modulos" id="vista-buscar-alumnos"></div>
+        <div class="modulos" id="vista-docentes"></div>
+        <div class="modulos" id="vista-materias"></div>
+        <div class="modulos" id="vista-matricula"></div>
+        <div class="modulos" id="vista-inscripcion"></div>
+        <div class="modulos" id="vista-notas"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="public/js/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script type="module" src="public/js/app.js"></script>
+</form>
+</body>
+</html>

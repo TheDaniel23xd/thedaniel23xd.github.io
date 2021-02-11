@@ -1,0 +1,65 @@
+<form data-accion="nuevo" data-idDocente='' id="frm-docentes" method="post">
+    <div class="card text-white bg-dark mb-3" style="max-width: 24rem;">
+        <div class="card-header">
+            Mantenimiento Docentes
+        
+            <button type="button" id="btn-close-docentes" class="close" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="card-body">
+            <div class="row p-2">
+                <div class="col-4">
+                    CODIGO
+                </div>
+                <div class="col-6">
+                    <input type="text" id="txtCodigoDocente" placeholder="AAAA000000" class="form-control">
+                </div>
+            </div>
+            <div class="row p-2">
+                <div class="col-4">
+                    NOMBRE
+                </div>
+                <div class="col-8">
+                    <input type="text" id="txtNombreDocente" placeholder="AAA AAA" class="form-control">
+                </div>
+            </div>
+            <div class="row p-2">
+                <div class="col-4">
+                    NIT
+                </div>
+                <div class="col-8">
+                    <input type="text" id="txtNitDocente" placeholder="000000000" class="form-control">
+                </div>
+            </div>
+            <div class="row p-2">
+                <div class="col-4">
+                    DIRECCION
+                </div>
+                <div class="col-8">
+                    <input type="text" id="txtDireccionDocente" placeholder="AAA" class="form-control">
+                </div>
+            </div>
+            <div class="row p-2">
+                <div class="col-4">
+                    TEL
+                </div>
+                <div class="col-8">
+                    <input type="text" id="txtTelefonoDocente" placeholder="0000-0000" class="form-control">
+                </div>
+            </div>
+            <div class="row p-2"> 
+                <div class="col-12 text-center">
+                    <input id="btnGuardarDocentes" type="submit" class="btn btn-outline-primary text-white" value="Guardar">
+                    <input type="reset" class="btn btn-outline-warning text-white" value="Limpiar">
+                    <input type="button" class="btn btn-outline-success mostrar-buscar-docentes text-white" data-modulo="docentes" data-form="buscar-docentes" value="Buscar">
+                </div>
+            </div>
+            <div class="row p-2">
+                <div class="col-12 text-center">
+                    <div id="respuestaDocente"> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
