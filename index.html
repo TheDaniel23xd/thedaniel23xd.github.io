@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Menu</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    
+    <div class="menuToggle" onclick="ToggleMenu()"> </div>
+    <main class="B"><h1>Logo</h1></main>
+    <div class="navigation">
+        <div class="navArea">
+            <ul>
+                <li>
+                    <a href="#" onmouseenter="changeImage('img/img1.jpg')">Home</a>
+                </li>
+                <li>
+                    <a href="#" onmouseenter="changeImage('img/img2.jpg')">About</a>
+                </li>
+                <li>
+                    <a href="#" onmouseenter="changeImage('img/img3.jpg')">Services</a>
+                </li>
+                <li>
+                    <a href="#" onmouseenter="changeImage('img/img4.jpg')">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#" onmouseenter="changeImage('img/img5.jpg')">Team</a>
+                </li>
+                <li>
+                    <a href="#" onmouseenter="changeImage('img/img6.jpg')">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="imgArea">
+            <img src="img/img1.jpg" id="slider" alt="img1">
+        </div>
+    </div>
+    <script src="js/changeImage.js"></script>
+</body>
+</html>
