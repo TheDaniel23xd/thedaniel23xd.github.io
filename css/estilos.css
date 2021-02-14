@@ -50,7 +50,7 @@ body {
 /* --- --- CAROUSEL --- --- */
 .carousel__contenedor {
 	position: relative;
-    z-index: 1;
+    z-index: 1000;
 }
 
 .carousel__anterior,
