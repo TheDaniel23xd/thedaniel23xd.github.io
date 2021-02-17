@@ -84,7 +84,7 @@ background: radial-gradient(rgb(0,0,0,0.2),transparent,transparent);
     display: flex;
     justify-content: center;
     align-items: center;
-    background:  radial-gradient(transparent,rgb(255,255,255,0.2)),url(/image/clock.png);
+    background:  radial-gradient(transparent,rgb(255,255,255,0.2)),url(../image/clock.png);
     border-radius: 50%;
     backdrop-filter: blur(25px);
     border: 1px solid rgb(255, 255, 255,0.5);
