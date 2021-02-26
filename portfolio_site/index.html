@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio_site</title>
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.png">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/scrollreveal.js"></script>
 </head>
 <body>
     <header>
@@ -31,7 +32,7 @@
         </ul>
     </header>
     <section class="banner" id="home">
-        <div class="textBx">
+        <div class="textBx scroll-banner">
             <h2>Hello, I'm <br><span>Melissa Orellana.</span></h2>
             <h3>I'm a Front End Web Develover</h3>
             <a href="./pdf/GUIA DE TRABAJO CREANDO MI PORTAFOLIO PROFESIONAL.pdf" class="btn" download="CV.pdf">Download CV</a>  <!--La probieda de target="_blank" es para abrir en una pestaña nueva-->
@@ -41,11 +42,11 @@
         </div>
     </section>
     <section class="about" id="about">
-        <div class="heading">
+        <div class="heading scroll-heading">
             <h2>About Me</h2>
         </div>
         <div class="content">
-            <div class="contentBx w50">
+            <div class="contentBx w50 scroll-contentBx">
                 <h3>I'm a Front End Web Develover.</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                      Eaque nulla nam similique mollitia. Facere fugit voluptas 
@@ -56,12 +57,12 @@
                       Eum magni neque, rem, eaque consequuntur repellendus praesentium reprehenderit 
                       earum incidunt accusamus, perferendis quas iusto.</p>
             </div>
-            <div class="w50">
+            <div class="w50 scroll-img">
                 <img src="./img/foto.jfif" class="img">
             </div>
         </div>
     </section>
-    <section class="services" id="services">
+    <section class="services scroll-services" id="services">
         <div class="heading white">
             <h2>Our Services</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -105,8 +106,8 @@
             </div>
         </div>
     </section>
-    <section class="work" id="work">
-        <div class="heading">
+    <section class="work scroll-work" id="work">
+        <div class="heading ">
             <h2>Our Latest Work</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
@@ -128,7 +129,7 @@
             <a href="#" class="btn">View More</a>
          </div>
     </section>
-    <section class="testimonial" id="testimonial">
+    <section class="testimonial scroll-testimonial" id="testimonial">
         <div class="heading">
             <h2>Testimonial</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -150,7 +151,7 @@
             </div>
         </div>
     </section>
-    <section class="contact" id="contact">
+    <section class="contact scroll-heading" id="contact">
         <div class="heading white">
             <h2>Contact Us</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -199,5 +200,6 @@
         <p>copyright © 2021 Melissa Orellana. All Right Reserved</p>
     </div>
 <script src="./js/app.js"></script>
+<script src="./js/animations.js"></script>
 </body>
 </html>
