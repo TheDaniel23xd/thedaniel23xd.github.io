@@ -14,18 +14,18 @@
     <header>
         <a href="#" class="logo">Melissa Orellana</a>
         <div class="toggle" onclick="toggleMenu();"></div>
-        <ul class="menu">
-            <li><a href="#home" onclick="toggleMenu();">Home</a></li> 
-            <li><a href="#about" onclick="toggleMenu();">About</a></li>    
-            <li><a href="#services" onclick="toggleMenu();" >Services</a></li> 
-            <li><a href="#work" onclick="toggleMenu();">Work</a></li> 
-            <li><a href="#testimonial" onclick="toggleMenu();">Testimonial</a></li> 
-            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        <ul  class="menu">
+            <li><a class="lang" key="home" href="#home" onclick="toggleMenu();">Home</a></li> 
+            <li><a  class="lang" key="about" href="#about" onclick="toggleMenu();">About me</a></li>    
+            <li><a class="lang" key="services" href="#services" onclick="toggleMenu();" >Services</a></li> 
+            <li><a class="lang" key="Works" href="#work" onclick="toggleMenu();">Works</a></li> 
+            <li><a class="lang" key="testimonial" href="#testimonial" onclick="toggleMenu();">Testimonials</a></li> 
+            <li><a class="lang" key="contact" href="#contact" onclick="toggleMenu();">Contact</a></li>
             <ul class="lang-menu">
-                <li><a href="#" class="selected-lang" >English</a>
+                <li><a  href="#" class="selected-lang lang" key="Languages">Languages</a>
                     <ul>
-                        <li><a href="#" class="es">Spanish</a></li>
-                        <li><a href="#" class="en">English</a></li>
+                        <li><a href="#"  class="es translate" id="es">Spanish</a></li>
+                        <li><a href="#" class="en translate" id="en" >English</a></li>
                     </ul>
                 </li>
               </ul>
@@ -33,9 +33,9 @@
     </header>
     <section class="banner" id="home">
         <div class="textBx scroll-banner">
-            <h2>Hello, I'm <br><span>Melissa Orellana.</span></h2>
-            <h3>I'm a Front End Web Develover</h3>
-            <a href="./pdf/GUIA DE TRABAJO CREANDO MI PORTAFOLIO PROFESIONAL.pdf" class="btn" download="CV.pdf">Download CV</a>  <!--La probieda de target="_blank" es para abrir en una pestaña nueva-->
+            <h2 class="lang" key="title1">Hello, I'm <br><span>Melissa Orellana.</span></h2>
+            <h3 class="lang" key="title2">I'm a Front End Web Develover</h3>
+            <a href="./pdf/GUIA DE TRABAJO CREANDO MI PORTAFOLIO PROFESIONAL.pdf" class="btn lang" key="Download" download="CV.pdf">Download CV</a>  <!--La probieda de target="_blank" es para abrir en una pestaña nueva-->
             <a href="#" class="icon"><i class="fab fa-linkedin-in"></i></a>
             <a href="#" class="icon"><i class="fab fa-github"></i></a>
             
@@ -43,12 +43,12 @@
     </section>
     <section class="about" id="about">
         <div class="heading scroll-heading">
-            <h2>About Me</h2>
+            <h2 class="lang" key="title3">About Me</h2>
         </div>
         <div class="content">
             <div class="contentBx w50 scroll-contentBx">
-                <h3>I'm a Front End Web Develover.</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                <h3 class="lang" key="title4">I'm a Front End Web Develover.</h3>
+                <p class="lang" key="title5"> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                      Eaque nulla nam similique mollitia. Facere fugit voluptas 
                      debitis numquam in, labore fugiat officia vero totam qui perspiciatis
                       harum nam quo nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -64,8 +64,8 @@
     </section>
     <section class="services scroll-services" id="services">
         <div class="heading white">
-            <h2>Our Services</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h2 class="lang" key="title6">Our Services</h2>
+            <p class="lang" key="title7">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <div class="content">
             <div class="servicesBx">
@@ -200,6 +200,8 @@
         <p>copyright © 2021 Melissa Orellana. All Right Reserved</p>
     </div>
 <script src="./js/app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./js/Languages/Languages.js"></script>
 <script src="./js/animations.js"></script>
 </body>
 </html>

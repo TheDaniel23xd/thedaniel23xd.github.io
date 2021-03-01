@@ -129,6 +129,7 @@ section{
  {
     color: #111;
  }
+ 
 header ul.lang-menu {
     width: 100px;
     text-align: right;
@@ -143,10 +144,11 @@ header ul.lang-menu .selected-lang {
 header ul.lang-menu .selected-lang:before {
     content: '';
     display: inline-block;
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     margin-left: 2px;
-    background-image: url(https://www.countryflags.io/us/flat/32.png);
+    margin-right: px;
+    background-image: url(/img/languages.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -163,6 +165,20 @@ header ul.lang-menu ul {
     border-radius: 5px;
     box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
 }
+header.sticky ul .lang-menu ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    position: absolute;
+    top: 26px;
+    right: 0px;
+    width: 125px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+
+}
 header ul.lang-menu ul li {
     list-style: none;
     text-align: left;
@@ -172,6 +188,7 @@ header ul.lang-menu ul li {
 header ul.lang-menu ul li a {
     text-decoration: none;
     width: 125px;
+   
     padding: 5px 10px;
     color: #222;
     
