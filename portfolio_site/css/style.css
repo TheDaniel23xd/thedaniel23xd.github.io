@@ -148,7 +148,7 @@ header ul.lang-menu .selected-lang:before {
     height: 24px;
     margin-left: 2px;
     margin-right: px;
-    background-image: url(./img/languages.png);
+    background-image: url(../img/languages.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
