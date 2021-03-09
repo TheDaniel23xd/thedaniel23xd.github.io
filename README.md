@@ -1,4 +1,12 @@
-<p align="center" width="300">
-   <img align="center" width="200" src="https://avatars.githubusercontent.com/u/46628892?s=460&u=4bc1d2de4ad016220fc755df3b32dd8570f3c3a8&v=4" />
-   <h3 align="center">¡Hey 👋! Soy TheDaniel23xd 👨🏻‍💻</h3>
-</p>
+### Proyectos
+
+| ------------ | ------------ | ------------ |
+| Proyectos     |
+| ------------- |
+|  [2021frontend ](https://thedaniel23xd.github.io/2021frontend/)  |
+| [AnalogClockUIDesign   ](https://thedaniel23xd.github.io/AlignItemUsingCSSGrid/)  |
+| [CSS_Custom_Scrollbar_Using_Pure_CSS ](https://thedaniel23xd.github.io/CSS_Custom_Scrollbar_Using_Pure_CSS/) |
+| [AlignItemUsingCSSGrid  ](https://thedaniel23xd.github.io/AlignItemUsingCSSGrid/) |
+| [Creating-Language-Switcher](https://thedaniel23xd.github.io/Creating-Language-Switcher/)  |
+| [portfolio_site](https://thedaniel23xd.github.io/portfolio_site/)   |
+| [ preguntas-frecuentes-codigo_](https://thedaniel23xd.github.io/preguntas-frecuentes-codigo_/)   |
