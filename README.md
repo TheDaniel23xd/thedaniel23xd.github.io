@@ -3,6 +3,7 @@
 | ------------ | ------------ | ------------ |
 
 <img align="right" alt="GIF" src="https://media.giphy.com/media/836HiJc7pgzy8iNXCn/giphy.gif" />
+
 | Lista de Proyectos que se van creando     |
 | ------------- |
 |  [2021frontend ](https://thedaniel23xd.github.io/2021frontend/)  |
