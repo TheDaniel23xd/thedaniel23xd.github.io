@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio_site</title>
+    <title>MeliOrellana</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style2.css">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.png">
@@ -12,34 +12,43 @@
     <script src="./js/scrollreveal.js"></script>
 </head>
 <body>
-    <header>
-        <!-- navegacion -->
-        <a href="#" class="logo">Melissa Orellana</a>
+    <nav>
+        <a href="#" class="logo">Epiphany</a>
         <div class="toggle" onclick="toggleMenu();"></div>
-        <ul  class="menu">
-            <li><a class="lang" key="home" href="#home" onclick="toggleMenu();">Home</a></li> 
-            <li><a  class="lang" key="about" href="#about" onclick="toggleMenu();">About me</a></li>    
-            <li><a class="lang" key="services" href="#services" onclick="toggleMenu();" >Services</a></li> 
-            <li><a class="lang" key="Works" href="#work" onclick="toggleMenu();">Works</a></li> 
-            <li><a class="lang" key="testimonial" href="#testimonial" onclick="toggleMenu();">Testimonials</a></li> 
-            <li><a class="lang" key="contact" href="#contact" onclick="toggleMenu();">Contact</a></li>
+        <ul class="menu">
+            <li>
+                <a class="lang" key="home" href="#home" onclick="toggleMenu();">Home</a>
+            </li>
+            <li>
+                <a class="lang" key="about" href="#about" onclick="toggleMenu();">About</a>
+            </li>
+            <li>
+                <a class="lang" key="project" href="#Project" onclick="toggleMenu();">Project</a>
+            </li>
+            <li>
+                <a class="lang" key="publications" href="#publications" onclick="toggleMenu();">publications</a>
+            </li>
+            <li>
+                <a class="lang" key="contact" href="#contact" onclick="toggleMenu();">Contact</a>
+            </li>
             <ul class="lang-menu">
-                <li><a  href="#" class="selected-lang lang" key="Languages">Languages</a>
+                <li>
+                    <a href="#" class="selected-lang lang" key="Languages">Languages</a>
                     <ul>
-                        <li><a href="#"  class="es translate" id="es">Spanish</a></li>
-                        <li><a href="#" class="en translate" id="en" >English</a></li>
+                        <li><a href="#" class="es translate" id="es">Spanish</a></li>
+                        <li><a href="#" class="en translate" id="en">English</a></li>
                     </ul>
                 </li>
-              </ul>
+            </ul>
         </ul>
-    </header>
+    </nav>
     <section class="banner" id="home">
         <div class="textBx scroll-banner">
-            <h2 class="lang" key="title1">Hello, I'm <br><span>Melissa Orellana.</span></h2>
+            <h2 class="lang" key="title1">Hello, I'm <br><br> MeliOrellana.</h2>
             <h3 class="lang" key="title2">I'm a Front End Web Develover</h3>
-            <a href="./pdf/GUIA DE TRABAJO CREANDO MI PORTAFOLIO PROFESIONAL.pdf" class="btn lang" key="Download" download="CV.pdf">Download CV</a>  <!--La probieda de target="_blank" es para abrir en una pestaña nueva-->
-            <a href="#" class="icon"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" class="icon"><i class="fab fa-github"></i></a>
+            <a href="./pdf/Melissa Orellana.pdf" class="btn lang" key="Download" target="_blank">Download CV</a>  <!--La probieda de target="_blank" es para abrir en una pestaña nueva-->
+            <a href="https://www.linkedin.com/in/estefan%C3%ADa-orellana-6a3390208/" target="_blank" class="icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/mely201" target="_blank" class="icon"><i class="fab fa-github"></i></a>
             
         </div>
     </section>
@@ -60,11 +69,11 @@
                       earum incidunt accusamus, perferendis quas iusto.</p>
             </div>
             <div class="w50 scroll-img">
-                <img src="./img/foto.jfif" class="img">
+                <img src="./img/foto.png" class="img">
             </div>
         </div>
     </section>
-    <section class="services scroll-services" id="services">
+    <section class="services scroll-services" id="publications">
         <div class="heading white">
             <h2 class="lang" key="title6">Our Services</h2>
             <p class="lang" key="title7">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -82,6 +91,7 @@
                 <p class="lang" key="title11">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Quaerat dolores inventore vitae atque natus quam iste. </p>
             </div>
+             <!--
             <div class="servicesBx">
                 <img src="./img/icon3.png" alt="">
                 <h2 class="lang" key="title12">Android App</h2>
@@ -105,112 +115,78 @@
                 <h2 class="lang" key="title18">Video Editing</h2>
                 <p class="lang" key="title19">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Quaerat dolores inventore vitae atque natus quam iste. </p>
+                -->
             </div>
         </div>
     </section>
-    <!--
-        <section class="work scroll-work" id="work">
-            <div class="heading ">
-                <h2 class="lang" key="title20">Our Latest Work</h2>
-                <p class="lang" key="title21">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="content">
-                <div class="workBx">
-                    <img src="./img/product1.jpg" alt="">
-                </div>
-                <div class="workBx">
-                    <img src="./img/product2.jpg" alt="">
-                </div>
-                <div class="workBx">
-                    <img src="./img/product3.jpg" alt="">
-                </div>
-                <div class="workBx">
-                    <img src="./img/product4.jpg" alt="">
-                </div>
-            </div>
-            <div class="heading">
-                <a href="#" class="btn lang"  key="title22" >View More</a>
-             </div>
-        </section>
-    -->
-    <section>
-        <!--image card layout start-->
-        <div class="container">
-           <!--image row start-->
-           <div class="row">
-             <!--image card start-->
-             <div class="image">
-               <img src="./img/product1.jpg" alt="">
-               <div class="details">
-                 <h2>Your <span>Title</span></h2>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-               </div>
-             </div>
-             <!--image card end-->
-             <!--image card start-->
-             <div class="image">
-               <img src="./img/product2.png" alt="">
-               <div class="details">
-                 <h2>Your <span>Title</span></h2>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-               </div>
-             </div>
-             <!--image card end-->
-             <!--image card start-->
-             <div class="image">
-               <img src="./img/product3.png" alt="">
-               <div class="details">
-                 <h2>Your <span>Title</span></h2>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-               </div>
-             </div>
-             <!--image card end-->
-           </div>
-           <!--image row end-->
-           <!--image row start-->
-           <div class="row">
-             <!--image card start-->
-             <div class="image">
-               <img src="/img/product4.png" alt="">
-               <div class="details">
-                 <h2>Your <span>Title</span></h2>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                
-               </div>
-             </div>
-             <!--image card end-->
-           </div>
-           <!--image row end-->
-         </div>
-         <!--image card layout end-->
-       
-           </section>
-    <section class="testimonial scroll-testimonial" id="testimonial">
-        <div class="heading">
-            <h2 class="lang" key="title23">Testimonial</h2>
-            <p class="lang" key="title24"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="content">
-            <div class="testimonialBx">
-                <p class="lang" key="title25">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A,
-                     cupiditate omnis ducimus et sit quis perspiciatis quas laudantium.
-                      Unde, a id dignissimos repudiandae sapiente quis eaque quisquam dolor 
-                      modi perspiciatis!</p>
-                      <h3 class="lang" key="title26">Someone Famous <br><span>Creative Disigner</span></h3>
-            </div>
-            <div class="testimonialBx">
-                <p class="lang" key="title28">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A,
-                     cupiditate omnis ducimus et sit quis perspiciatis quas laudantium.
-                      Unde, a id dignissimos repudiandae sapiente quis eaque quisquam dolor 
-                      modi perspiciatis!</p>
-                      <h3 class="lang" key="title26">Someone Famous <br><span>Creative Disigner</span></h3>
-            </div>
-        </div>
+    
+    <section class="contenedor" id="Project">
+		<header>
+			<div class="logo">
+				<h1>Proyectos</h1>
+				<p>Galeria de proyectos</p>
+			</div>
+			<form action="">
+				<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+			</form>
+			<div class="categorias" id="categorias">
+				<a href="#" class="activo">Todos</a>
+				<a href="#">Desarrollo web</a>
+				<a href="#">Electronica</a>
+			</div>
+		</header>
+
+		<section class="grid" id="grid">
+			<div class="item" 
+				 data-categoria="desarrollo web"
+				 data-etiquetas="web dev app html5"
+				 data-descripcion="Agro Producers:
+                 Forme parte del área de gestión en el desarrollo del proyecto el cual está basado para ayudar a los productores agrícolas a poder comercializar sus productos mediante la app web y que los usuarios puedan ingresar hacer sus compras."
+			>
+				<div class="item-contenido">
+					<img src="img/product1.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="electronica"
+				 data-etiquetas="electronica "
+				 data-descripcion="Generador de energía:
+                 Creación desde cero de la fuente de energía la cual se realizó en las prácticas de la materia electrónica análoga en la cual participe en su creación ya que fue creada por un grupo de trabajo del cual forme parte."
+			>
+				<div class="item-contenido">
+					<img src="img/product2.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="desarrollo web"
+				 data-etiquetas="web dev app html5"
+				 data-descripcion="DevEvaluación:
+                 Forme parte del área de gestión en el desarrollo del proyecto el cual está basado en la evaluación de historias de usuarios con estándares ISO 25010"
+			>
+				<div class="item-contenido">
+					<img src="img/product3.png" alt="">
+				</div>
+			</div>
+
+
+		</section>
+
+		<section class="overlay" id="overlay">
+			<div class="contenedor-img">
+				<button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+				<img src="" alt="">
+			</div>
+			<p class="descripcion"></p>
+		</section>
     </section>
+    
+    
     <section class="contact scroll-heading" id="contact">
         <div class="heading white">
-            <h2 class="lang" key="title29">Contact Us</h2>
-            <p class="lang" key="title30">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h2 class="lang" key="title29">Contact Information</h2>
+            <p class="lang" key="title30"> </p>
         </div>
         <div class="content">
             <div class="contactInfo">
@@ -222,31 +198,31 @@
                         </div>
                     <div class="text">
                         <h3 class="lang" key="title32">Address</h3>
-                        <p>a46 Sugar Camp Road,<br>Owatona,Minnesota,<br>5506</p>
+                        <p>Recidencial Don Bosco,<br>Calle a Villa Chentilla<br>5506</p>
                     </div>
                     </div>
                     <div class="box">
                         <div class="icon"><i class="fas fa-phone-alt"></i></div>
                     <div class="text">
                         <h3 class="lang" key="title33">Phome</h3>
-                        <p>507-475-6094</p>
+                        <p>7541-6874</p>
                     </div>
                     </div>
                     <div class="box">
                         <div class="icon"><i class="far fa-envelope"></i></div>
                     <div class="text">
                         <h3 class="lang" key="title34">Email</h3>
-                        <p>wrub7d78i0e@temporary-mail.net</p>
+                        <p>estefaniaore19@gmail.com</p>
                     </div>
                     </div>
                 </div>
             </div>
-            <div class="formBx">
-                <form action="">
+            <div  class="formBx">
+                <form name="contact" method="POST" data-netlify="true" action="">
                     <h3 class="lang" key="title35">Message Me</h3>
-                    <input type="text"  placeholder="Full Name" class="lang" key="title36">
-                    <input type="email" name="" id="" placeholder="Email">
-                    <textarea name="" id=""  placeholder="Your Message"></textarea>
+                    <input name="name"  type="text"  placeholder="Full Name" class="lang" key="title36">
+                    <input name="email" type="email" name="" id="" placeholder="Email">
+                    <textarea  name="message" id=""  placeholder="Your Message"></textarea>
                     <input type="submit" value="send">
                 </form>
             </div>
@@ -255,9 +231,11 @@
     <div class="copyright">
         <p>copyright © 2021 Melissa Orellana. All Right Reserved</p>
     </div>
-<script src="./js/app.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="./js/Languages/Languages.js"></script>
-<script src="./js/animations.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/Languages/Languages.js"></script>
+    <script src="./js/animations.js"></script>
+    <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+	<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 </html>
