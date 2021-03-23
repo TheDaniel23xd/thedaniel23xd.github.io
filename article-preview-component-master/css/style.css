@@ -1,2 +1,230 @@
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  --very-grayish-blue: hsl(217, 19%, 35%);
+  --dark-blue: hsl(214, 17%, 51%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+}
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+body {
+  font-size: 13px;
+  max-height: 100vh;
+  text-rendering: optimizeSpeed;
+  font-family: "Manrope", sans-serif;
+  background-color: var(--light-grayish-blue);
+}
+.card {
+  margin: 15rem auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  max-width: 55rem;
+  flex: 1;
+  background-color: white;
+  border-radius: 1rem;
+}
+#drawers {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.card_text {
+  position: relative;
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.item {
+  margin: 0 auto;
+  padding: 1rem 1rem;
+}
+
+.card_title {
+  font-size: 1.5rem;
+  color: var(--very-grayish-blue);
+}
+
+.comment {
+  color: var(--dark-blue);
+  line-height: 1.7;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user img {
+  border-radius: 100%;
+}
+
+.info {
+  padding: 0 1rem;
+}
+.option {
+  padding-top: 0.5rem;
+}
+
+.shareOptions {
+  border: 1px solid white;
+  background-color: var(--light-grayish-blue);
+  border-radius: 100%;
+  padding: 0.8rem;
+}
+h3 {
+  color: var(--very-grayish-blue);
+}
+.desktop {
+  position: absolute;
+  align-self: flex-end;
+  padding: -10rem;
+  top: 11rem;
+  right: -2.4rem;
+  display: none;
+  justify-content: space-between;
+  background-color: var(--very-grayish-blue);
+  padding: 1rem 1rem;
+  border-radius: 1rem;
+  width: 200px;
+  height: 50px;
+}
+.mobile_img {
+  display: none;
+}
+.desktop p {
+  color: var(--grayish-blue);
+  padding-right: 0.5rem;
+}
+.desktop img {
+  padding: 0 0.1rem;
+}
+
+@media only screen and (max-width: 56.25rem) {
+  .card {
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 18.75rem;
+  }
+
+  #drawers {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 0;
+    width: 300px;
+    height: 300px;
+  }
+  .card_title {
+    font-size: 1rem;
+  }
+  .card_text {
+    position: relative;
+    padding: 1rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .info {
+    padding: 0 0.5rem;
+    font-size: 0.7rem;
+  }
+  .mobile_img {
+    display: block;
+    border-radius: 100%;
+    padding: 0.3rem;
+    position: absolute;
+    top: 0.1rem;
+    left: 0.05rem;
+  }
+
+  .mobile {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 15.5rem;
+    left: 0.06rem;
+    background-color: var(--very-grayish-blue);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    width: 18.75rem;
+    height: 3rem;
+  }
+  .mb {
+    position: relative;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 1rem;
+  }
+  .mobile .social {
+    margin-right: 2rem;
+  }
+  .mobile p {
+    color: var(--grayish-blue);
+    padding-left: 0.4rem;
+  }
+  .media {
+    padding: 0 0.2rem;
+  }
+}

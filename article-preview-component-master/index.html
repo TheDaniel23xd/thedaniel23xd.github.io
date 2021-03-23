@@ -1,25 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
   <title>Frontend Mentor | Article preview component</title>
-  <link rel="stylesheet" href="./css/style.css">
-
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
-<body>
 
-  <div class="container">
-    <div></div>
-    <div></div>
-  </div>
-  
+<body>
+  <section class="card">
+    <img id="drawers" src="./images/drawers.jpg" alt="drawes" width="400" height="400" />
+
+    <div class="card_text">
+      <div class="col">
+        <h1 class="item card_title">
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h1>
+      </div>
+
+      <div class="col">
+        <p class="item comment">
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
+      </div>
+
+      <div id="sharable" class="col item">
+        <p>SHARE</p>
+        <div class="social">
+          <img class="media" src="./images/icon-facebook.svg" alt="facebook" />
+          <img class="media" src="images/icon-twitter.svg" alt="twitter" />
+          <img class="media" src="images/icon-pinterest.svg" alt="pinterest" />
+        </div>
+        <div class="mb">
+          <img class="mobile_img" id="shareOption_mobile" src="./images/icon-share.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="col person mobile_p">
+        <div class="item profile">
+          <div class="user">
+            <img src="./images/avatar-michelle.jpg" alt="avatar" width="50" height="50" />
+
+            <div class="info">
+              <h3>Michelle Appleton</h3>
+              <p class="comment">28 Jun 2020</p>
+            </div>
+          </div>
+
+          <div class="option">
+            <img class="shareOptions" id="shareOption_mobile_p" src="./images/icon-share.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col person desktop_p">
+        <div class="item profile">
+          <div class="user">
+            <img src="./images/avatar-michelle.jpg" alt="avatar" width="50" height="50" />
+
+            <div class="info">
+              <h3>Michelle Appleton</h3>
+              <p class="comment">28 Jun 2020</p>
+            </div>
+          </div>
+
+          <div class="option">
+            <img class="shareOptions" id="shareOption_desktop" src="./images/icon-share.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/TheDaniel23xd/thedaniel23xd.github.io" target="_blank">TheDaniel23xd</a>.
   </div>
+
+  <script src="./js/main.js"></script>
 </body>
+
 </html>
