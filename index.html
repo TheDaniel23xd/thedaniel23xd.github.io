@@ -1,115 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navigation Menu</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet"> 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/estilos.css">
-</head>
-<body>
-    
-    <div class="menuToggle" onclick="ToggleMenu()"> </div>
-    <!-- ---- Menu ---- -->
-    <div class="navigation">
-        <div class="navArea">
-            <ul>
-                <li>
-                    <a href="#" onmouseenter="changeImage('img/img1.jpg')">Home</a>
-                </li>
-                <li>
-                    <a href="#" onmouseenter="changeImage('img/img2.jpg')">About</a>
-                </li>
-                <li>
-                    <a href="#" onmouseenter="changeImage('img/img3.jpg')">Services</a>
-                </li>
-                <li>
-                    <a href="#" onmouseenter="changeImage('img/img4.jpg')">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#" onmouseenter="changeImage('img/img5.jpg')">Team</a>
-                </li>
-                <li>
-                    <a href="#" onmouseenter="changeImage('img/img6.jpg')">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <div class="imgArea">
-            <img src="img/img1.jpg" id="slider" alt="img1">
-        </div>
-    </div>
-    <div class="contenedor">
-		<main class="contenido-principal">
-			<img src="img/1.png" alt="Dome of the German Bundestag" class="contenido-principal__imagen">
-			<div class="contenido-principal__contenedor">
-				<h1 class="contenido-principal__titulo">Dome of the German Bundestag</h1>
-				<p class="contenido-principal__resumen">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a commodo orci. Nulla ipsum ante, auctor a odio id, bibendum accumsan mauris.
-				</p>
-				<p class="contenido-principal__resumen">
-					Fusce malesuada mollis ante, at elementum mi maximus nec. Praesent volutpat, tortor sed condimentum sagittis, mi diam fringilla nibh.
-				</p>
-			</div>
-		</main>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<div class="carousel">
-			<div class="carousel__contenedor">
-				<button aria-label="Anterior" class="carousel__anterior">
-					<i class="fas fa-chevron-left"></i>
-				</button>
+		 <!-- ===== FAVICON ===== -->
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon.png">
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <!-- ===== BOX ICONS ===== -->
+		<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
-				<div class="carousel__lista">
-					<div class="carousel__elemento">
-						<img src="img/2.png" alt="Rock and Roll Hall of Fame">
-						<p>Rock and Roll Hall of Fame</p>
+        <title>personal portfolio | DanielDiaz</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+			<nav class="nav bd-grid">
+				<div class="nav__toggle" id="nav-toggle">
+					<i class="bx bx-menu"></i>
+				</div>
+
+				<div>
+					<a href="#home" class="nav__logo">Daniel</a>
+				</div>
+
+				<div class="nav__menu" id="nav-menu">
+					<div class="nav__close" id="nav-close">
+						<i class="bx bx-x"></i>
 					</div>
-					<div class="carousel__elemento">
-						<img src="img/3.png" alt="Constitution Square - Tower I">
-						<p>Constitution Square - Tower I</p>
+
+					<ul class="nav__list">
+						<li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+						<li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+						<li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+						<li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+						<li class="nav__item"><a href="#works" class="nav__link">Works</a></li>
+						<li class="nav__item"><a href="#contact" class="nav__link">Contactme</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home" id="home">
+				<div class="home__container bd-grid">
+					<div class="home__data">
+						<div class="home__img">
+							<img src="./assets/img/perfil.png" alt="">
+						</div>
+
+						<h1 class="home__title">Daniel Diaz</h1>
+						<span class="home__profession">Frontend Developer</span>
+
+						<div class="home__social">
+							<a href="#" class="home__social-link"><i class="bx bxl-linkedin"></i></a>
+							<a href="#" class="home__social-link"><i class="bx bxl-github"></i></a>
+							<a href="#" class="home__social-link"><i class="bx bxl-instagram"></i></a>
+						</div>
+						<a download="" href="#" class="button home__button">Download Resume cv</a>
 					</div>
-					<div class="carousel__elemento">
-						<img src="img/4.png" alt="Empire State Building">
-						<p>Empire State Building</p>
+				</div>
+			</section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section" id="about">
+				<span class="section-subtitle">My intro</span>
+				<h2 class="section-title">About Me</h2>
+
+				<div class="about__container bd-grid">
+					<div class="about__data">
+						<p class="about__description">Hi, I'm a frontend developer, passionate about creating and developing web interfaces.
+							I have many years of experience in this area of work, with multiple quality proyects.</p>
+						<img  src="./assets/img/about.png" alt="" class="about__img">
 					</div>
-					<div class="carousel__elemento">
-						<img src="img/5.png" alt="Harmony Tower">
-						<p>Harmony Tower</p>
-					</div>
+
+					<div>
+						<div class="about__information">
+							<h3 class="about__information-title">Information</h3>
 	
-					<div class="carousel__elemento">
-						<img src="img/6.png" alt="Empire State Building">
-						<p>Empire State Building</p>
+							<div class="about__information-data">
+								<i class="bx bx-user about__information-icon"></i>
+								<span>Daniel Diaz</span>
+							</div>
+	
+							<div class="about__information-data">
+								<i class="bx bx-phone about__information-icon"></i>
+								<span>999-888-777</span>
+							</div>
+	
+							<div class="about__information-data">
+								<i class="bx bx-envelope about__information-icon"></i>
+								<span>User@gmail.com</span>
+							</div>
+						</div>
+	
+						<div class="about__information">
+							<h3 class="about__information-title">Experience and support</h3>
+	
+							<div class="about__information-data">
+								<i class="bx bx-medal about__information-icon"></i>
+								<div>
+									<span class="about__information-subtitle">5 Years job</span>
+									<span class="about__information-subtitle-small">Experience</span>
+								</div>
+							</div>
+	
+							<div class="about__information-data">
+								<i class="bx bx-briefcase about__information-icon"></i>
+								<div>
+									<span class="about__information-subtitle">50+ Proyects</span>
+									<span class="about__information-subtitle-small">Completed</span>
+								</div>
+							</div>
+	
+							<div class="about__information-data">
+								<i class="bx bx-support about__information-icon"></i>
+								<div>
+									<span class="about__information-subtitle">support</span>
+									<span class="about__information-subtitle-small">Online 24/7</span>
+								</div>
+							</div>
+	
+						</div>
 					</div>
-					<div class="carousel__elemento">
-						<img src="img/7.png" alt="Harmony Tower">
-						<p>Harmony Tower</p>
+				</div>
+			</section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+				<span class="section-subtitle">My Choose Me</span>
+				<h2 class="section-title">My experience Area</h2>
+
+				<div class="skills__container bd-grid">
+					<div class="skills__content">
+						<h3 class="skills__subtitle">Frontend</h3>
+
+						<div class="skills__data">
+							<span class="skills__name">Html/Css</span>
+							<span class="skills__number">80%</span>
+							<span class="skills__bar skills__html"></span>
+						</div>
+
+						<div class="skills__data">
+							<span class="skills__name">Javascrip</span>
+							<span class="skills__number">90%</span>
+							<span class="skills__bar skills__js"></span>
+						</div>
+
+						<div class="skills__data">
+							<span class="skills__name">React</span>
+							<span class="skills__number">70%</span>
+							<span class="skills__bar skills__react"></span>
+						</div>
+
+						<div class="skills__data">
+							<span class="skills__name">Angular</span>
+							<span class="skills__number">60%</span>
+							<span class="skills__bar skills__angular"></span>
+						</div>
 					</div>
-					<div class="carousel__elemento">
-						<img src="img/8.png" alt="Empire State Building">
-						<p>Empire State Building</p>
-					</div>
-					<div class="carousel__elemento">
-						<img src="img/9.png" alt="Harmony Tower">
-						<p>Harmony Tower</p>
+					<div class="skills__content">
+						<h3 class="skills__subtitle">Backend</h3>
+
+						<div class="skills__data">
+							<span class="skills__name">Php</span>
+							<span class="skills__number">80%</span>
+							<span class="skills__bar skills__php"></span>
+						</div>
+
+						<div class="skills__data">
+							<span class="skills__name">Node js</span>
+							<span class="skills__number">70%</span>
+							<span class="skills__bar skills__node"></span>
+						</div>
+
+						<div class="skills__data">
+							<span class="skills__name">Firebase</span>
+							<span class="skills__number">90%</span>
+							<span class="skills__bar skills__firebase"></span>
+						</div>
+
+						<div class="skills__data">
+							<span class="skills__name">Python</span>
+							<span class="skills__number">60%</span>
+							<span class="skills__bar skills__python"></span>
+						</div>
 					</div>
 				</div>
 
-				<button aria-label="Siguiente" class="carousel__siguiente">
-					<i class="fas fa-chevron-right"></i>
-				</button>
-			</div>
+			</section>
 
-			<div role="tablist" class="carousel__indicadores"></div>
-		</div>
-	</div>
-    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
-	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-	<script src="js/app.js"></script>
-    <script src="js/changeImage.js"></script>
-</body>
+            <!--===== EDUCATION =====-->
+            <section class="education section" id="">
+				<span class="section-subtitle">Qualification</span>
+				<h2 class="section-title">My Education</h2>
+
+				<div class="education__container bd-grid">
+					<div class="education__content">
+						<div>
+							<h3 class="education__year">2010 - 2013</h3>
+							<span class="education__university">University of Studies</span>
+						</div>
+
+						<div class="education__time">
+							<span class="education__rounder"></span>
+							<span class="education__line"></span>
+						</div>
+
+						<div>
+							<h3 class="education__race">Diploma Development</h3>
+							<span class="education__specialty">Frontend</span>
+						</div>
+					</div>
+
+					<div class="education__content">
+						<div>
+							<h3 class="education__year">2014 - 2017</h3>
+							<span class="education__university">University of Studies</span>
+						</div>
+
+						<div class="education__time">
+							<span class="education__rounder"></span>
+							<span class="education__line"></span>
+						</div>
+
+						<div>
+							<h3 class="education__race">Diploma Development</h3>
+							<span class="education__specialty">Backend</span>
+						</div>
+
+					</div>
+					<div class="education__content">
+						<div>
+							<h3 class="education__year">2018 - 2020</h3>
+							<span class="education__university">University of Studies</span>
+						</div>
+
+						<div class="education__time">
+							<span class="education__rounder"></span>
+							<span class="education__line"></span>
+						</div>
+
+						<div>
+							<h3 class="education__race">Diploma Design</h3>
+							<span class="education__specialty">UI/UX</span>
+						</div>
+
+					</div>
+				</div>
+
+			</section>
+
+            <!--===== SERVICES =====-->
+            <section class="services section" id="services">
+				<span class="section-subtitle">What I offer</span>
+				<h2 class="section-title">My Services</h2>
+
+				<div class="services__container bd-grid">
+					<div class="services__content">
+						<i class="bx bx-code services__icon"></i>
+						<h3 class="services__title">Web Design</h3>
+						<p class="services__description">This Services that I offer is of high quality. 
+						and above all experience that I have in the labor field for many years.
+					    </p>
+					</div>
+
+					<div class="services__content">
+						<i class="bx bx-pen services__icon"></i>
+						<h3 class="services__title">Graphic Design</h3>
+						<p class="services__description">This Services that I offer is of high quality. 
+						and above all experience that I have in the labor field for many years.
+					    </p>
+					</div>
+
+					<div class="services__content">
+						<i class="bx bx-brush services__icon"></i>
+						<h3 class="services__title">UI/UX</h3>
+						<p class="services__description">This Services that I offer is of high quality. 
+						and above all experience that I have in the labor field for many years.
+					    </p>
+					</div>
+
+					<div class="services__content">
+						<i class="bx bx-server services__icon"></i>
+						<h3 class="services__title">Backend Development</h3>
+						<p class="services__description">This Services that I offer is of high quality. 
+						and above all experience that I have in the labor field for many years.
+					    </p>
+					</div>
+
+					<div class="services__content">
+						<i class="bx bx-pencil services__icon"></i>
+						<h3 class="services__title">Content Writing</h3>
+						<p class="services__description">This Services that I offer is of high quality. 
+						and above all experience that I have in the labor field for many years.
+					    </p>
+					</div>
+
+					<div class="services__content">
+						<i class="bx bx-mobile services__icon"></i>
+						<h3 class="services__title">Interfaces Movil</h3>
+						<p class="services__description">This Services that I offer is of high quality. 
+						and above all experience that I have in the labor field for many years.
+					    </p>
+					</div>
+
+				</div>
+			</section>
+
+            <!--===== PROJECT IN MIND =====-->
+            <section class="proyect section">
+				<div class="proyect__container bd-grid">
+					<div class="proyect__data">
+						<h2 class="section-title proyect__title">Do you have a proyect in mind</h2>
+						<p class="proyect__description">If you have a proyect that you want to carry out, do not hesitate
+							and tell me what it is, and what services I can offer you, contact me directly here.
+						</p>
+						<a href="#contact" class="button button__light">Contact Me</a>
+					</div>
+
+					<img src="./assets/img/projectmind.png" alt="" class="proyect__img">
+				</div>
+			</section>
+
+            <!--===== WORKS =====-->
+            <section class="works section" id="works">
+				<span class="section-subtitle">My portafilo</span>
+				<h2 class="section-title">Recent Works</h2>
+
+				<div class="works__container bd-grid">
+					<div class="works__img">
+						<img src="./assets/img/work1.jpg" alt="">
+						<div class="works__data">
+							<a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
+							<span class="works__title">Work 1</span>
+						</div>
+					</div>
+					<div class="works__img">
+						<img src="./assets/img/work2.jpg" alt="">
+						<div class="works__data">
+							<a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
+							<span class="works__title">Work 2</span>
+						</div>
+					</div>
+					<div class="works__img">
+						<img src="./assets/img/work3.jpg" alt="">
+						<div class="works__data">
+							<a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
+							<span class="works__title">Work 3</span>
+						</div>
+					</div>
+					<div class="works__img">
+						<img src="./assets/img/work4.jpg" alt="">
+						<div class="works__data">
+							<a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
+							<span class="works__title">Work 4</span>
+						</div>
+					</div>
+					<div class="works__img">
+						<img src="./assets/img/work5.jpg" alt="">
+						<div class="works__data">
+							<a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
+							<span class="works__title">Work 5</span>
+						</div>
+					</div>
+					<div class="works__img">
+						<img src="./assets/img/work6.jpg" alt="">
+						<div class="works__data">
+							<a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
+							<span class="works__title">Work 6</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+				<span class="section-subtitle">Contact Me</span>
+				<h2 class="section-title">Get In Touch</h2>
+
+				<div class="contact__container bd-grid">
+					<form action="" class="contact__form">
+						<div class="contact__inputs">
+
+							<input type="text" placeholder="Name" class="contact__input">
+							<input type="email" placeholder="Email" class="contact__input">
+						</div>
+
+						<input type="text" placeholder="Proyect" class="contact__input">
+						<textarea name="" id="" cols="0" rows="10" placeholder="Message" class="contact__input"></textarea>
+
+						<input type="submit" value="Send Message" class="button contact__button">
+					</form>
+					
+					<div>
+						<div class="contact__info">
+						<h3 class="contact__subtitle">Call me</h3>
+						<span class="contact__text">999-000-123</span>
+						<span class="contact__text">999-000-123</span>
+					</div>
+
+					<div class="contact__info">
+						<h3 class="contact__subtitle">E-mail</h3>
+						<span class="contact__text">danieuser@gmail.com</span>
+						<span class="contact__text">contactme@daniel.com</span>
+					</div>
+
+					<div class="contact__info">
+						<h3 class="contact__subtitle">Location</h3>
+						<span class="contact__text">Av. Bolivar #123</span>
+						<span class="contact__text">lima - Peru</span>
+					</div>
+					
+				</div>
+
+				</div>
+			</section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer section">
+			<div class="footer__container bd-grid">
+				<h1 class="footer__title">Daniel</h1>
+				<p class="footer__description">I am Daniel and this is my personal website.consult me here.</p>
+
+				<div class="footer__social">
+					<a href="" class="footer__link">
+						<i class="bx bxl-facebook"></i>
+					</a>
+					<a href="" class="footer__link">
+						<i class="bx bxl-instagram"></i>
+					</a>
+					<a href="" class="footer__link">
+						<i class="bx bxl-twitter"></i>
+					</a>
+				</div>
+				<p class="footer__copy">All right reserved by Bedimcode - 2020</p>
+			</div>
+		</footer>
+        <!--===== APP JS =====-->
+        <script src="./assets/js/app.js"></script>
+    </body>
 </html>
