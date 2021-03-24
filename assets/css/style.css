@@ -676,7 +676,7 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
     .skills__container,
     .services__container,
     .works__container,
-    .contact__container,.contact__inputs{
+    .contact__container{
         grid-template-columns: repeat(2,1fr);
     }
 
