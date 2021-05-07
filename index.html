@@ -1,442 +1,419 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <title> Portafolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" sizes="16x16"  href="./assets/favicons/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="./assets/css/font-awesome.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
 
-		 <!-- ===== FAVICON ===== -->
-        <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon.png">
-        <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <!-- ===== BOX ICONS ===== -->
-		<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Page Loader Start -->
+  <div class="page-loader">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <!-- Page Loader End -->
 
-        <title>personal portfolio | DanielDiaz</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-			<nav class="nav bd-grid">
-				<div class="nav__toggle" id="nav-toggle">
-					<i class="bx bx-menu"></i>
-				</div>
+ <!-- Background Circles Start -->
+ <div class="bg-circles">
+   <div class="circle-1"></div>
+   <div class="circle-2"></div>
+   <div class="circle-3"></div>
+   <div class="circle-4"></div>
+ </div>
+ <!-- Background Circles End -->
 
-				<div>
-					<a href="#home" class="nav__logo">Daniel</a>
-				</div>
+<!-- Overlay Start -->
+<div class="overlay">
+</div>
+<!-- Overlay End -->
 
-				<div class="nav__menu" id="nav-menu">
-					<div class="nav__close" id="nav-close">
-						<i class="bx bx-x"></i>
-					</div>
+<!-- Main Start -->
+<div class="main hidden">
 
-					<ul class="nav__list">
-						<li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-						<li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-						<li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-						<li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
-						<li class="nav__item"><a href="#works" class="nav__link">Works</a></li>
-						<li class="nav__item"><a href="#contact" class="nav__link">Contactme</a></li>
-					</ul>
-				</div>
-			</nav>
-		</header>
+  <!-- Header Start -->
+  <header class="header">
+    <div class="container">
+      <div class="row flex-end">
+        <button type="button" class="nav-toggler">
+          <span></span>
+        </button>
+        <nav class="nav">
+          <div class="nav-inner">
+            <ul>
+              <li><a href="#home" class="nav-item link-item">home</a></li>
+              <li><a href="#about" class="nav-item link-item">about</a></li>
+              <li><a href="#portfolio" class="nav-item link-item">portfolio</a></li>
+              <li><a href="#contact" class="nav-item link-item">contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- Header End -->
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home" id="home">
-				<div class="home__container bd-grid">
-					<div class="home__data">
-						<div class="home__img">
-							<img src="./assets/img/perfil.png" alt="">
-						</div>
+  <!-- Home Section Start -->
+  <section class="home-section align-items-center" id="home">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="home-text">
+          <p>Hello, I'm</p>
+          <h1>Daniel Diaz</h1>
+          <h2>frontend web developer</h2>
+          <a href="#about" class="btn link-item">more about me</a>
+          <a href="#portfolio" class="btn link-item">portfolio</a>
+        </div>
+        <div class="home-img">
+          <div class="img-box">
+            <img src="./assets/img/about.jpg" alt="profile-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Home Section End -->
 
-						<h1 class="home__title">Daniel Diaz</h1>
-						<span class="home__profession">Frontend Developer</span>
+  <!-- About Section Start -->
+  <section class="about-section sec-padding" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>about me</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="about-img">
+          <div class="img-box">
+            <img src="./assets/img/about.jpg" alt="about img">
+          </div>
+        </div>
+        <div class="about-text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nihil dicta ab placeat similique ipsum, ut est itaque accusamus nesciunt doloribus hic illum suscipit, facilis eaque laborum labore earum blanditiis unde voluptate sit? Placeat voluptatibus odio id provident laboriosam, facere enim, nam voluptates unde magnam in neque nesciunt obcaecati modi.</p>
+          <h3>skills</h3>
+          <div class="skills">
+            <div class="skill-item">html</div>
+            <div class="skill-item">css</div>
+            <div class="skill-item">javascript</div>
+            <div class="skill-item">bootstrap</div>
+			<!--
+            <div class="skill-item">php</div>
+            <div class="skill-item">java</div>
+            <div class="skill-item">python</div>
+            <div class="skill-item">wordpress</div>
+            <div class="skill-item">c</div>
+            <div class="skill-item">c++</div>
+			--->
+          </div>
 
-						<div class="home__social">
-							<a href="#" class="home__social-link"><i class="bx bxl-linkedin"></i></a>
-							<a href="#" class="home__social-link"><i class="bx bxl-github"></i></a>
-							<a href="#" class="home__social-link"><i class="bx bxl-instagram"></i></a>
-						</div>
-						<a download="" href="#" class="button home__button">Download Resume cv</a>
-					</div>
-				</div>
-			</section>
+          <div class="about-tabs">
+            <button type="button" class="tab-item active" data-target="#education">education</button>
+            <button type="button" class="tab-item" data-target="#experience">experience</button>
+          </div>
 
-            <!--===== ABOUT =====-->
-            <section class="about section" id="about">
-				<span class="section-subtitle">My intro</span>
-				<h2 class="section-title">About Me</h2>
+          <!-- Education Start -->
+          <div class="tab-content active" id="education">
+             <div class="timeline">
+               <div class="timeline-item">
+                 <span class="date">2013 - 2016</span>
+                 <h4>bachelor of technology - <span>todfod university</span></h4>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ratione expedita veniam dicta autem nobis?</p>
+               </div>
+               <div class="timeline-item">
+                <span class="date">2013 - 2016</span>
+                <h4>bachelor of technology - <span>todfod university</span></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ratione expedita veniam dicta autem nobis?</p>
+              </div>
+              <div class="timeline-item">
+                <span class="date">2013 - 2016</span>
+                <h4>bachelor of technology - <span>todfod university</span></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ratione expedita veniam dicta autem nobis?</p>
+              </div>
+             </div>
+          </div>
+          <!-- Education End -->
 
-				<div class="about__container bd-grid">
-					<div class="about__data">
-						<p class="about__description">Hi, I'm a frontend developer, passionate about creating and developing web interfaces.
-							I have many years of experience in this area of work, with multiple quality proyects.</p>
-						<img  src="./assets/img/about.png" alt="" class="about__img">
-					</div>
+          <!-- Experience Start -->
+          <div class="tab-content" id="experience">
+            <div class="timeline">
+              <div class="timeline-item">
+                <span class="date">2013 - 2016</span>
+                <h4>web developer - <span>DanieL Diaz</span></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum molestias, delectus cupiditate cumque commodi adipisci.</p>
+              </div>
+              <div class="timeline-item">
+                <span class="date">2013 - 2016</span>
+                <h4>web developer - <span>DanieL Diaz</span></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum molestias, delectus cupiditate cumque commodi adipisci.</p>
+              </div>
+              <div class="timeline-item">
+                <span class="date">2013 - 2016</span>
+                <h4>web developer - <span>DanieL Diaz</span></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum molestias, delectus cupiditate cumque commodi adipisci.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Experience End -->
+          <a href="./assets/cv.pdf" target="_blank" class="btn">download cv</a>
+          <a href="#contact" class="btn link-item">contact me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Section End -->
 
-					<div>
-						<div class="about__information">
-							<h3 class="about__information-title">Information</h3>
-	
-							<div class="about__information-data">
-								<i class="bx bx-user about__information-icon"></i>
-								<span>Daniel Diaz</span>
-							</div>
-	
-							<div class="about__information-data">
-								<i class="bx bx-phone about__information-icon"></i>
-								<span>999-888-777</span>
-							</div>
-	
-							<div class="about__information-data">
-								<i class="bx bx-envelope about__information-icon"></i>
-								<span>User@gmail.com</span>
-							</div>
-						</div>
-	
-						<div class="about__information">
-							<h3 class="about__information-title">Experience and support</h3>
-	
-							<div class="about__information-data">
-								<i class="bx bx-medal about__information-icon"></i>
-								<div>
-									<span class="about__information-subtitle">5 Years job</span>
-									<span class="about__information-subtitle-small">Experience</span>
-								</div>
-							</div>
-	
-							<div class="about__information-data">
-								<i class="bx bx-briefcase about__information-icon"></i>
-								<div>
-									<span class="about__information-subtitle">50+ Proyects</span>
-									<span class="about__information-subtitle-small">Completed</span>
-								</div>
-							</div>
-	
-							<div class="about__information-data">
-								<i class="bx bx-support about__information-icon"></i>
-								<div>
-									<span class="about__information-subtitle">support</span>
-									<span class="about__information-subtitle-small">Online 24/7</span>
-								</div>
-							</div>
-	
-						</div>
-					</div>
-				</div>
-			</section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-				<span class="section-subtitle">My Choose Me</span>
-				<h2 class="section-title">My experience Area</h2>
-
-				<div class="skills__container bd-grid">
-					<div class="skills__content">
-						<h3 class="skills__subtitle">Frontend</h3>
-
-						<div class="skills__data">
-							<span class="skills__name">Html/Css</span>
-							<span class="skills__number">80%</span>
-							<span class="skills__bar skills__html"></span>
-						</div>
-
-						<div class="skills__data">
-							<span class="skills__name">Javascrip</span>
-							<span class="skills__number">90%</span>
-							<span class="skills__bar skills__js"></span>
-						</div>
-
-						<div class="skills__data">
-							<span class="skills__name">React</span>
-							<span class="skills__number">70%</span>
-							<span class="skills__bar skills__react"></span>
-						</div>
-
-						<div class="skills__data">
-							<span class="skills__name">Angular</span>
-							<span class="skills__number">60%</span>
-							<span class="skills__bar skills__angular"></span>
-						</div>
-					</div>
-					<div class="skills__content">
-						<h3 class="skills__subtitle">Backend</h3>
-
-						<div class="skills__data">
-							<span class="skills__name">Php</span>
-							<span class="skills__number">80%</span>
-							<span class="skills__bar skills__php"></span>
-						</div>
-
-						<div class="skills__data">
-							<span class="skills__name">Node js</span>
-							<span class="skills__number">70%</span>
-							<span class="skills__bar skills__node"></span>
-						</div>
-
-						<div class="skills__data">
-							<span class="skills__name">Firebase</span>
-							<span class="skills__number">90%</span>
-							<span class="skills__bar skills__firebase"></span>
-						</div>
-
-						<div class="skills__data">
-							<span class="skills__name">Python</span>
-							<span class="skills__number">60%</span>
-							<span class="skills__bar skills__python"></span>
-						</div>
-					</div>
-				</div>
-
-			</section>
-
-            <!--===== EDUCATION =====-->
-            <section class="education section" id="">
-				<span class="section-subtitle">Qualification</span>
-				<h2 class="section-title">My Education</h2>
-
-				<div class="education__container bd-grid">
-					<div class="education__content">
-						<div>
-							<h3 class="education__year">2010 - 2013</h3>
-							<span class="education__university">University of Studies</span>
-						</div>
-
-						<div class="education__time">
-							<span class="education__rounder"></span>
-							<span class="education__line"></span>
-						</div>
-
-						<div>
-							<h3 class="education__race">Diploma Development</h3>
-							<span class="education__specialty">Frontend</span>
-						</div>
-					</div>
-
-					<div class="education__content">
-						<div>
-							<h3 class="education__year">2014 - 2017</h3>
-							<span class="education__university">University of Studies</span>
-						</div>
-
-						<div class="education__time">
-							<span class="education__rounder"></span>
-							<span class="education__line"></span>
-						</div>
-
-						<div>
-							<h3 class="education__race">Diploma Development</h3>
-							<span class="education__specialty">Backend</span>
-						</div>
-
-					</div>
-					<div class="education__content">
-						<div>
-							<h3 class="education__year">2018 - 2020</h3>
-							<span class="education__university">University of Studies</span>
-						</div>
-
-						<div class="education__time">
-							<span class="education__rounder"></span>
-							<span class="education__line"></span>
-						</div>
-
-						<div>
-							<h3 class="education__race">Diploma Design</h3>
-							<span class="education__specialty">UI/UX</span>
-						</div>
-
-					</div>
-				</div>
-
-			</section>
-
-            <!--===== SERVICES =====-->
-            <section class="services section" id="services">
-				<span class="section-subtitle">What I offer</span>
-				<h2 class="section-title">My Services</h2>
-
-				<div class="services__container bd-grid">
-					<div class="services__content">
-						<i class="bx bx-code services__icon"></i>
-						<h3 class="services__title">Web Design</h3>
-						<p class="services__description">This Services that I offer is of high quality. 
-						and above all experience that I have in the labor field for many years.
-					    </p>
-					</div>
-
-					<div class="services__content">
-						<i class="bx bx-pen services__icon"></i>
-						<h3 class="services__title">Graphic Design</h3>
-						<p class="services__description">This Services that I offer is of high quality. 
-						and above all experience that I have in the labor field for many years.
-					    </p>
-					</div>
-
-					<div class="services__content">
-						<i class="bx bx-brush services__icon"></i>
-						<h3 class="services__title">UI/UX</h3>
-						<p class="services__description">This Services that I offer is of high quality. 
-						and above all experience that I have in the labor field for many years.
-					    </p>
-					</div>
-
-					<div class="services__content">
-						<i class="bx bx-server services__icon"></i>
-						<h3 class="services__title">Backend Development</h3>
-						<p class="services__description">This Services that I offer is of high quality. 
-						and above all experience that I have in the labor field for many years.
-					    </p>
-					</div>
-
-					<div class="services__content">
-						<i class="bx bx-pencil services__icon"></i>
-						<h3 class="services__title">Content Writing</h3>
-						<p class="services__description">This Services that I offer is of high quality. 
-						and above all experience that I have in the labor field for many years.
-					    </p>
-					</div>
-
-					<div class="services__content">
-						<i class="bx bx-mobile services__icon"></i>
-						<h3 class="services__title">Interfaces Movil</h3>
-						<p class="services__description">This Services that I offer is of high quality. 
-						and above all experience that I have in the labor field for many years.
-					    </p>
-					</div>
-
-				</div>
-			</section>
-
-            <!--===== PROJECT IN MIND =====-->
-            <section class="proyect section">
-				<div class="proyect__container bd-grid">
-					<div class="proyect__data">
-						<h2 class="section-title proyect__title">Do you have a proyect in mind</h2>
-						<p class="proyect__description">If you have a proyect that you want to carry out, do not hesitate
-							and tell me what it is, and what services I can offer you, contact me directly here.
-						</p>
-						<a href="#contact" class="button button__light">Contact Me</a>
-					</div>
-
-					<img src="./assets/img/projectmind.png" alt="" class="proyect__img">
-				</div>
-			</section>
-
-            <!--===== WORKS =====-->
-            <section class="works section" id="works">
-				<span class="section-subtitle">My portafilo</span>
-				<h2 class="section-title">Recent Works</h2>
-
-				<div class="works__container bd-grid">
-					<div class="works__img">
-						<img src="./assets/img/1.png" alt="">
-						<div class="works__data">
-							<a href="https://thedaniel23xd.github.io/AlignItemUsingCSSGrid/" target="_blank" class="works__link"><i class="bx bx-link-alt"></i></a>
-							<span class="works__title">Work 1</span>
-						</div>
-					</div>
-					<div class="works__img">
-						<img src="./assets/img/2.png" alt="">
-						<div class="works__data">
-							<a href="https://thedaniel23xd.github.io/AnalogClockUIDesign/" target="_blank"  class="works__link"><i class="bx bx-link-alt"></i></a>
-							<span class="works__title">Work 2</span>
-						</div>
-					</div>
-					<div class="works__img">
-						<img src="./assets/img/3.png" alt="">
-						<div class="works__data">
-							<a href="https://thedaniel23xd.github.io/preguntas-frecuentes-codigo_/" target="_blank"  class="works__link"><i class="bx bx-link-alt"></i></a>
-							<span class="works__title">Work 3</span>
-						</div>
-					</div>
-					<div class="works__img">
-						<img src="./assets/img/4.png" alt="">
-						<div class="works__data">
-							<a href="https://thedaniel23xd.github.io/article-preview-component-master/" target="_blank"  class="works__link"><i class="bx bx-link-alt"></i></a>
-							<span class="works__title">Work 4</span>
-						</div>
-					</div>
-					<div class="works__img">
-						<img src="./assets/img/5.png" alt="">
-						<div class="works__data">
-							<a href="https://thedaniel23xd.github.io/portfolio_site/" target="_blank"  class="works__link"><i class="bx bx-link-alt"></i></a>
-							<span class="works__title">Work 5</span>
-						</div>
-					</div>
-					<div class="works__img">
-						<img src="./assets/img/6.png" alt="">
-						<div class="works__data">
-							<a href="https://thedaniel23xd.github.io/2021frontend/" target="_blank"  class="works__link"><i class="bx bx-link-alt"></i></a>
-							<span class="works__title">Work 6</span>
-						</div>
-					</div>
-				</div>
-			</section>
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-				<span class="section-subtitle">Contact Me</span>
-				<h2 class="section-title">Get In Touch</h2>
-
-				<div class="contact__container bd-grid">
-					<form name="contact" method="POST" data-netlify="true" class="contact__form">
-						<div class="contact__inputs">
-							<input type="text" placeholder="Name" name="name" class="contact__input">
-							<input type="email" placeholder="Email" name="email" class="contact__input">
-							<textarea name="" id="" cols="0" rows="10" placeholder="Message" name="message" class="contact__input"></textarea>
-						</div>
-						<input type="submit" value="Send Message" class="button contact__button">
-					</form>
-					
-					<div>
-						<div class="contact__info">
-						<h3 class="contact__subtitle">Call me</h3>
-						<span class="contact__text">999-000-123</span>
-						<span class="contact__text">999-000-123</span>
-					</div>
-
-					<div class="contact__info">
-						<h3 class="contact__subtitle">E-mail</h3>
-						<span class="contact__text">danieuser@gmail.com</span>
-						<span class="contact__text">contactme@daniel.com</span>
-					</div>
-
-					<div class="contact__info">
-						<h3 class="contact__subtitle">Location</h3>
-						<span class="contact__text">Av. Bolivar #123</span>
-						<span class="contact__text">lima - Peru</span>
-					</div>
-
-				</div>
-
-				</div>
-			</section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer section">
-			<div class="footer__container bd-grid">
-				<h1 class="footer__title">Daniel</h1>
-				<p class="footer__description">I am Daniel and this is my personal website.consult me here.</p>
-
-				<div class="footer__social">
-					<a href="" class="footer__link">
-						<i class="bx bxl-facebook"></i>
-					</a>
-					<a href="" class="footer__link">
-						<i class="bx bxl-instagram"></i>
-					</a>
-					<a href="" class="footer__link">
-						<i class="bx bxl-twitter"></i>
-					</a>
-				</div>
-				<p class="footer__copy">All right reserved by Danielcode - 2021</p>
+  <!-- Portfolio Section Start -->
+  <section class="portfolio-section sec-padding" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>recent work</h2>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Portfolio Item Start -->
+        <div class="portfolio-item">
+          <div class="portfolio-item-thumbnail">
+            <img src="./assets/img/1.png" alt="portfolio item thumb">
+          </div>
+          <h3 class="portfolio-item-title">Align Item Using CSS Grid</h3>
+          <button type="button" class="btn view-project-btn">view project</button>
+          <div class="portfolio-item-details">
+            <div class="description">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis ab nobis eaque optio excepturi tempore, cumque porro ex natus repudiandae vero repellendus ipsa possimus illum quisquam hic vitae blanditiis, alias consequuntur? Necessitatibus ipsa ex fugit cupiditate a ea amet saepe.</p>
+            </div>
+            <div class="general-info">
+              <ul>
+                <li>Created - <span>13 Feb 2021</span></li>
+                <li>technologies used - <span>Html, Css</span></li>
+                <li>Role - <span>Frontend</span></li>
+                <li>View Online - <span><a href="https://thedaniel23xd.github.io/AlignItemUsingCSSGrid/" target="_blank">Align Item Using CSS Grid</a></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Item End -->
+		   <!-- Portfolio Item Start -->
+		   <div class="portfolio-item">
+			<div class="portfolio-item-thumbnail">
+			  <img src="./assets/img/2.png" alt="portfolio item thumb">
 			</div>
-		</footer>
-        <!--===== APP JS =====-->
-        <script src="./assets/js/app.js"></script>
-    </body>
+			<h3 class="portfolio-item-title">AnalogClockUIDesign</h3>
+			<button type="button" class="btn view-project-btn">view project</button>
+			<div class="portfolio-item-details">
+			  <div class="description">
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis ab nobis eaque optio excepturi tempore, cumque porro ex natus repudiandae vero repellendus ipsa possimus illum quisquam hic vitae blanditiis, alias consequuntur? Necessitatibus ipsa ex fugit cupiditate a ea amet saepe.</p>
+			  </div>
+			  <div class="general-info">
+				<ul>
+				  <li>Created - <span>16 Feb 2021</span></li>
+				  <li>technologies used - <span>Html, Css, Js</span></li>
+				  <li>Role - <span>Frontend</span></li>
+				  <li>View Online - <span><a href="https://thedaniel23xd.github.io/AnalogClockUIDesign/" target="_blank">AnalogClockUIDesign</a></span></li>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		  <!-- Portfolio Item End -->
+        <!-- Portfolio Item Start -->
+        <div class="portfolio-item">
+          <div class="portfolio-item-thumbnail">
+            <img src="./assets/img/3.png" alt="portfolio item thumb">
+          </div>
+          <h3 class="portfolio-item-title">preguntas-frecuentes-codigo</h3>
+          <button type="button" class="btn view-project-btn">view project</button>
+          <div class="portfolio-item-details">
+            <div class="description">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis ab nobis eaque optio excepturi tempore, cumque porro ex natus repudiandae vero repellendus ipsa possimus illum quisquam hic vitae blanditiis, alias consequuntur? Necessitatibus ipsa ex fugit cupiditate a ea amet saepe.</p>
+            </div>
+            <div class="general-info">
+              <ul>
+                <li>Created - <span>11 Feb 2021</span></li>
+                <li>technologies used - <span>Html, Css, Js</span></li>
+                <li>Role - <span>Frontend</span></li>
+                <li>View Online - <span><a href="https://thedaniel23xd.github.io/preguntas-frecuentes-codigo_/" target="_blank">preguntas-frecuentes-codigo</a></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Item End -->
+        <!-- Portfolio Item Start -->
+        <div class="portfolio-item">
+          <div class="portfolio-item-thumbnail">
+            <img src="./assets/img/4.png" alt="portfolio item thumb">
+          </div>
+          <h3 class="portfolio-item-title">article-preview-component-master</h3>
+          <button type="button" class="btn view-project-btn">view project</button>
+          <div class="portfolio-item-details">
+            <div class="description">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis ab nobis eaque optio excepturi tempore, cumque porro ex natus repudiandae vero repellendus ipsa possimus illum quisquam hic vitae blanditiis, alias consequuntur? Necessitatibus ipsa ex fugit cupiditate a ea amet saepe.</p>
+            </div>
+            <div class="general-info">
+              <ul>
+                <li>Created - <span>22 Mar 2021</span></li>
+                <li>technologies used - <span>Html, Css, Js</span></li>
+                <li>Role - <span>Frontend</span></li>
+                <li>View Online - <span><a href="https://thedaniel23xd.github.io/article-preview-component-master/" target="_blank">article-preview-component-master</a></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Item End -->
+        <!-- Portfolio Item Start -->
+        <div class="portfolio-item">
+          <div class="portfolio-item-thumbnail">
+            <img src="./assets/img/5.png" alt="portfolio item thumb">
+          </div>
+          <h3 class="portfolio-item-title">Personal Portfolio Website</h3>
+          <button type="button" class="btn view-project-btn">view project</button>
+          <div class="portfolio-item-details">
+            <div class="description">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis ab nobis eaque optio excepturi tempore, cumque porro ex natus repudiandae vero repellendus ipsa possimus illum quisquam hic vitae blanditiis, alias consequuntur? Necessitatibus ipsa ex fugit cupiditate a ea amet saepe.</p>
+            </div>
+            <div class="general-info">
+              <ul>
+                <li>Created - <span>4 Dec 2020</span></li>
+                <li>technologies used - <span>Html, Css, Javascript</span></li>
+                <li>Role - <span>Frontend</span></li>
+                <li>View Online - <span><a href="#" target="_blank">www.domain.com</a></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Item End -->
+        <!-- Portfolio Item Start -->
+        <div class="portfolio-item">
+          <div class="portfolio-item-thumbnail">
+            <img src="./assets/img/6.png" alt="portfolio item thumb">
+          </div>
+          <h3 class="portfolio-item-title">2021frontend</h3>
+          <button type="button" class="btn view-project-btn">view project</button>
+          <div class="portfolio-item-details">
+            <div class="description">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis ab nobis eaque optio excepturi tempore, cumque porro ex natus repudiandae vero repellendus ipsa possimus illum quisquam hic vitae blanditiis, alias consequuntur? Necessitatibus ipsa ex fugit cupiditate a ea amet saepe.</p>
+            </div>
+            <div class="general-info">
+              <ul>
+                <li>Created - <span>10 Mar 2021</span></li>
+                <li>technologies used - <span>Html, Css, Javascript</span></li>
+                <li>Role - <span>Frontend</span></li>
+                <li>View Online - <span><a href="https://thedaniel23xd.github.io/2021frontend/" target="_blank">2021frontend</a></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Item End -->
+        <!-- Portfolio Item Start -->
+        <div class="portfolio-item">
+          <div class="portfolio-item-thumbnail">
+            <img src="./assets/img/7.png" alt="portfolio item thumb">
+          </div>
+          <h3 class="portfolio-item-title">Glassmorphism Battery Level</h3>
+          <button type="button" class="btn view-project-btn">view project</button>
+          <div class="portfolio-item-details">
+            <div class="description">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis ab nobis eaque optio excepturi tempore, cumque porro ex natus repudiandae vero repellendus ipsa possimus illum quisquam hic vitae blanditiis, alias consequuntur? Necessitatibus ipsa ex fugit cupiditate a ea amet saepe.</p>
+            </div>
+            <div class="general-info">
+              <ul>
+                <li>Created - <span>5 may 2021</span></li>
+                <li>technologies used - <span>Html, Css, Js</span></li>
+                <li>Role - <span>Frontend</span></li>
+                <li>View Online - <span><a href="https://thedaniel23xd.github.io/Glassmorphism_Battery_Level/" target="_blank">Glassmorphism Battery Level</a></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Item End -->
+      </div>
+    </div>
+  </section>
+  <!-- Portfolio Section End -->
+
+  <!-- Contact Section Start -->
+  <section class="contact-section sec-padding" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>contact me</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="contact-form">
+          <form>
+            <div class="row">
+              <div class="input-group">
+                <input type="text" placeholder="Name" class="input-control" required>
+              </div>
+              <div class="input-group">
+                <input type="text" placeholder="Email" class="input-control" required>
+              </div>
+              <div class="input-group">
+                <input type="text" placeholder="Subject" class="input-control" required>
+              </div>
+              <div class="input-group">
+                <textarea placeholder="Message" class="input-control" required></textarea>
+              </div>
+              <div class="submit-btn">
+                <button type="submit" class="btn">send message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <h3>Email</h3>
+            <p>example@gmail.com</p>
+          </div>
+          <div class="contact-info-item">
+            <h3>Phone</h3>
+            <p>91 98 **** ****</p>
+          </div>
+          <div class="contact-info-item">
+            <h3>follow me</h3>
+            <div class="social-links">
+              <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section End -->
+
+</div>
+<!-- Main End -->
+
+<!-- Portfolio Item Details Popup Start -->
+<div class="portfolio-popup">
+  <div class="pp-inner">
+    <div class="pp-content">
+      <div class="pp-header">
+        <button type="button" class="btn pp-close"><i class="fas fa-times"></i></button>
+        <div class="pp-thumbnail">
+          <img src="./assets/img/portfolio/3.jpg" alt="pp-thumbnail">
+        </div>
+        <h3></h3>
+      </div>
+      <div class="pp-body">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Portfolio Item Details Popup End -->
+
+  
+<script src="./assets/js/script.js"></script>
+</body>
 </html>

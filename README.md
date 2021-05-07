@@ -14,6 +14,8 @@
 | [portfolio_site](https://thedaniel23xd.github.io/portfolio_site/)   |
 | [ preguntas-frecuentes-codigo_](https://thedaniel23xd.github.io/preguntas-frecuentes-codigo_/)   |  
 | [article-preview-component-master](https://thedaniel23xd.github.io/article-preview-component-master/)   |
+| [Glassmorphism_Battery_Level](https://thedaniel23xd.github.io/Glassmorphism_Battery_Level/)   |
+
 | ------------ | ------------ | ------------ |
 
 
