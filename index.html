@@ -349,13 +349,13 @@
           <form name="contact" method="POST" data-netlify="true">
             <div class="row">
               <div class="input-group">
-                <input type="text" name="name" placeholder="Name" class="input-control" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}" required>
+                <input type="text" name="name" placeholder="Name" class="input-control" title="Letras y números. Tamaño mínimo: 5. Tamaño máximo: 40" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{5,40}" required>
               </div>
               <div class="input-group">
-                <input type="text" name="email" placeholder="Email" class="input-control" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"  required>
+                <input type="text" name="email" placeholder="Email" class="input-control" title="Ingrese un correo valido" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"  required>
               </div>
               <div class="input-group">
-                <textarea placeholder="Message" name="message" class="input-control" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,150}" required></textarea>
+                <textarea placeholder="Message" name="message" class="input-control" title="Letras y números. Tamaño mínimo: 5. Tamaño máximo: 150" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{5,150}" required></textarea>
               </div>
               <div class="submit-btn">
                 <button type="submit"  class="btn">send message</button>
